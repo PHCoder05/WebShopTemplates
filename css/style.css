@@ -1,0 +1,424 @@
+body {
+    background-color: #f0f5fa;
+}
+
+.bg {
+    background-color: #ffffff;
+}
+
+/* Default width for all devices */
+.search-input {
+    width: 200px;
+}
+
+/* Increase width for laptop view (1024px and above) */
+@media (min-width: 1024px) {
+    .search-input {
+        width: 400px;
+        background-color: #f0f5fa;
+    }
+}
+
+/* Search icon */
+.search-icon {
+    background-color: brown;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-thumbnail.nav-tabs {
+    border: none;
+    margin-top: 15px;
+}
+
+.preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%;
+}
+
+.preview-thumbnail.nav-tabs li img {
+    max-width: 100%;
+    display: block;
+}
+
+.preview-thumbnail.nav-tabs li a {
+    padding: 0;
+    margin: 0;
+}
+
+.preview-thumbnail.nav-tabs li:last-of-type {
+    margin-right: 0;
+}
+
+.tab-content {
+    overflow: hidden;
+}
+
+.tab-content img {
+    width: 100%;
+    animation-name: opacity;
+    animation-duration: .3s;
+}
+
+.card {
+    margin-top: 50px;
+    background: #eee;
+    padding: 3em;
+    line-height: 1.5em;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors {
+    flex-grow: 1;
+}
+
+.product-title, .price, .sizes, .colors {
+    text-transform: UPPERCASE;
+    font-weight: bold;
+}
+
+.checked, .price span {
+    color: #ff9f1a;
+}
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+    margin-bottom: 15px;
+}
+
+#actual-price{
+
+    color: green !important;
+    font-size: 50px;
+}
+.product-title {
+    margin-top: 0;
+}
+
+.size {
+    margin-right: 10px;
+}
+
+.size:first-of-type {
+    margin-left: 40px;
+}
+
+.color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px;
+}
+
+.color:first-of-type {
+    margin-left: 20px;
+}
+
+.add-to-cart, .like {
+    background: #ff9f1a;
+    padding: 1.2em 1.5em;
+    border: none;
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    color: #fff;
+    transition: background .3s ease;
+}
+
+.add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff;
+}
+
+.not-available {
+    text-align: center;
+    line-height: 2em;
+}
+
+.not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff;
+}
+
+.orange {
+    background: #ff9f1a;
+}
+
+.green {
+    background: #85ad00;
+}
+
+.blue {
+    background: #0076ad;
+}
+
+.tooltip-inner {
+    padding: 1.3em;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        transform: scale(3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Product section  */
+.container {
+    max-width: max-content;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.preview {
+    display: flex;
+    flex-direction: row;
+}
+
+.preview-thumbnail {
+    width: 20%;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview-thumbnail img, .preview-thumbnail video {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.preview-thumbnail img:hover, .preview-thumbnail video:hover {
+    transform: scale(1.1);
+}
+
+.preview-pic {
+    width: 80%;
+    max-height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.preview-pic img, .preview-pic video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details {
+    padding: 30px;
+    flex: 1;
+}
+
+.countdown p, .pricing p, .rating p, .action button {
+    margin: 5px 0;
+}
+
+.countdown span, .pricing span, .percentage-off {
+    font-weight: bold;
+}
+
+.countdown span {
+    color: #e74c3c; /* Red color for countdown */
+}
+
+.pricing del {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.pricing span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.percentage-off {
+    font-size: 1.2em;
+    color: #f39c12; /* Orange color for percentage off */
+}
+
+.rating {
+    margin-bottom: 15px;
+}
+
+.rating .stars {
+    color: #f39c12;
+    font-size: 1.2em;
+}
+
+.seller-badge p {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+}
+
+.description p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.action button {
+    padding: 12px 24px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .preview {
+        flex-direction: column;
+    }
+    .preview-thumbnail {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    .preview-thumbnail img, .preview-thumbnail video {
+        margin: 0 5px;
+    }
+}
+
+
+/* Custom CSS for Enhanced Comment Section */
+/* Custom CSS for Enhanced Comment Section */
+
+/* Comment List Styling */
+#commentList .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#commentList .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#commentList .card-text {
+    color: #666;
+}
+
+/* Comment Form Styling */
+#commentForm {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#commentForm .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+#commentForm .form-control {
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+#commentForm button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#commentForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Overall Section Styling */
+/* section {
+    background-color: #f8f9fa;
+    padding: 30px;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    #commentForm {
+        padding: 15px;
+    }
+    #commentList .card {
+        padding: 15px;
+    }
+}
+
+/* fooyer */
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f5fa;
+    color: #333;
+}
+
+/* Navbar and header */
+.navbar {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar .search-input {
+    width: 200px;
+    background-color: #fff;
+    border: none;
+}
+
+.navbar .search-icon {
+    background-color: #28a745;
+    border: none;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <section>
+    <nav class="navbar navbar-light bg shadow p-3 mb-5 bg-body rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img src="images\logo.svg" alt="Navbar Image" height="60">
+          </a>
+          <form class="d-flex">
+            <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success search-icon" type="submit">
+              <img src="images\search-icon.svg" alt="Search" height="20">
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Hero-Section -->
+    <section>
+      <div class="container">
+      
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/5.jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="images/5.jpg" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="images/5.jpg" alt="New york" style="width:100%;">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+    </section>
+    <section>
+
+        <div class="container shadow p-3 mb-5 bg-body rounded">
+            <div class="card">
+                <div class="container-fliud">
+                    <div class="wrapper row">
+                        <div class="preview col-md-6">
+                            
+                            <div class="preview-pic tab-content">
+                              <div class="tab-pane active" id="pic-1"><img src="images\5.jpg" /></div>
+                              <div class="tab-pane" id="pic-2"><img src="images\1.jpg" /></div>
+                              <div class="tab-pane" id="pic-3"><img src="images\2.jpg" /></div>
+                              <div class="tab-pane" id="pic-4"><img src="images\3.jpg" /></div>
+                              <div class="tab-pane" id="pic-5"><img src="images\4.jpg" /></div>
+                            </div>
+                            <ul class="preview-thumbnail nav nav-tabs">
+                              <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="images\botttl.jpg" /></a></li>
+                              <li><a data-target="#pic-2" data-toggle="tab"><img src="images\1.jpg" /></a></li>
+                              <li><a data-target="#pic-3" data-toggle="tab"><img src="images\2.jpg" /></a></li> <li><a data-target="#pic-4" data-toggle="tab"><img src="images\3.jpg" /></a></li> <li><a data-target="#pic-5" data-toggle="tab"><img src="images\.jpg" /></a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="details col-md-6">
+                            <h3 class="product-title">men's shoes fashion</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <span class="review-no">41 reviews</span>
+                            </div>
+                            <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+                            <h4 class="price">current price: <span>$180</span></h4>
+                            <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                            <h5 class="sizes">sizes:
+                                <span class="size" data-toggle="tooltip" title="small">s</span>
+                                <span class="size" data-toggle="tooltip" title="medium">m</span>
+                                <span class="size" data-toggle="tooltip" title="large">l</span>
+                                <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+                            </h5>
+                            <h5 class="colors">colors:
+                                <span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+                                <span class="color green"></span>
+                                <span class="color blue"></span>
+                            </h5>
+                            <div class="action">
+                                <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!---------------------------------------- Footer ------------------------------------>
+    <section>
+
+   <!-- Footer -->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted bg ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </script>
+</body>
+</html>
